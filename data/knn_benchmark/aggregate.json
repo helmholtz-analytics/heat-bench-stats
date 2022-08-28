@@ -84,5 +84,48 @@
             "project": "heat",
             "branch": "bencharking-with-pytest-for-genkgo"
         }
+    },
+    {
+        "group": null,
+        "name": "test_knn",
+        "fullname": "benchmarks/pytest-benchmarks/knn_benchmark/test_knn_benchmark.py::test_knn",
+        "params": null,
+        "param": null,
+        "extra_info": {},
+        "options": {
+            "disable_gc": false,
+            "timer": "perf_counter",
+            "min_rounds": 5,
+            "max_time": 1.0,
+            "min_time": 5e-06,
+            "warmup": false
+        },
+        "stats": {
+            "min": 0.004207802005112171,
+            "max": 0.025661691091954708,
+            "mean": 0.005360635837948904,
+            "stddev": 0.004669384614317108,
+            "rounds": 205,
+            "median": 0.0042524561285972595,
+            "iqr": 3.485684283077717e-05,
+            "q1": 0.00423598475754261,
+            "q3": 0.004270841600373387,
+            "iqr_outliers": 15,
+            "stddev_outliers": 11,
+            "outliers": "11;15",
+            "ld15iqr": 0.004207802005112171,
+            "hd15iqr": 0.004327830858528614,
+            "ops": 186.54503499768077,
+            "total": 1.0989303467795253,
+            "iterations": 1
+        },
+        "commit_info": {
+            "id": "173470baff7af56f9666d21c8fad2117836613ec",
+            "time": "2022-08-22T15:37:28+02:00",
+            "author_time": "2022-08-22T15:37:28+02:00",
+            "dirty": true,
+            "project": "heat",
+            "branch": "bencharking-with-pytest-for-genkgo"
+        }
     }
 ]
