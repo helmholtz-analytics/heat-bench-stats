@@ -2,5 +2,9 @@
    {
         "name": "Box-plot",
         "file": "Box-plot.jsonata"
-    }
+    },
+   {
+        "name": "Chart-plot",
+        "file": "linechart.jsonata"
+    },
 ]
