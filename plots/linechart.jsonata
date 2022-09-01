@@ -1,0 +1,60 @@
+{
+  "type": "line",
+  "data": {
+    "labels": `content`.`commit_info`.`branch`,
+    "datasets": [
+        {
+        "label": "Max Running Time",
+        "data": `content`.`stats`.max,
+        "backgroundColor": "rgb(2,166,143)",
+        "borderColor": "hsl(2,93%,54%)",
+        "fill": 1
+      },
+      {
+        "label": "Mean Running Time",
+        "data": `content`.`stats`.mean,
+        "backgroundColor": "rgb(0,0,0)",
+        "borderColor": "rgb(0,0,0)",
+        "fill": false
+      },
+      {
+        "label": "Min Running Time",
+        "data": `content`.`stats`.min,
+        "backgroundColor": "rgb(239,166,143)",
+        "borderColor": "hsl(2,93%,54%)",
+        "fill": 1
+      }
+    ]
+  },
+  "options": {
+    "title": {
+      "display": true,
+      "text": "Heat Pytest Benchmark Results"
+    },
+    "tooltips": {
+      "mode": "index",
+      "intersect": false
+    },
+    "scales": {
+      "xAxes": [
+        {
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Source Branch"
+          }
+        }
+      ],
+      "yAxes": [
+        {
+          "scaleLabel": {
+            "display": true,
+            "labelString": "Execution Time"
+          },
+          "ticks": {
+            "min": 0
+          }
+        }
+      ]
+    }
+  }
+}
