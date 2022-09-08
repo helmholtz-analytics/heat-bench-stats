@@ -1,14 +1,14 @@
 [
    {
         "name": "Box-plot",
-        "file": "Box-plot.jsonata"
+        "file": "./Box-plot.jsonata"
     },
    {
         "name": "Chart-plot",
-        "file": "linechart.jsonata"
+        "file": "./linechart.jsonata"
     },
    {
         "name": "Chart-plot",
-        "file": "linechart2.jsonata"
-    }
+        "file": "./linechart2.jsonata"
+    },
 ]
