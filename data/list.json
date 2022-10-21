@@ -1,1 +1,6 @@
-[{"name": "knn_benchmark", "file": "knn_benchmark/aggregate.json"}]
+[
+    {
+        "name": "data",
+        "file": "data/knn_benchmark/bench_data.json"
+    }
+]

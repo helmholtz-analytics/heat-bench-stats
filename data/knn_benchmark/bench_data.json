@@ -1,0 +1,45 @@
+[
+    {
+        "group": null,
+        "name": "test_knn",
+        "fullname": "benchmarks/knn_benchmark/test_knn_benchmark.py::test_knn",
+        "params": null,
+        "param": null,
+        "extra_info": {},
+        "options": {
+            "disable_gc": false,
+            "timer": "perf_counter",
+            "min_rounds": 5,
+            "max_time": 1.0,
+            "min_time": 5e-06,
+            "warmup": false
+        },
+        "stats": {
+            "min": 0.004087215289473534,
+            "max": 0.00445365346968174,
+            "mean": 0.004181228426038002,
+            "stddev": 8.715518404417022e-05,
+            "rounds": 98,
+            "median": 0.004149738699197769,
+            "iqr": 8.722580969333649e-05,
+            "q1": 0.004123235121369362,
+            "q3": 0.004210460931062698,
+            "iqr_outliers": 8,
+            "stddev_outliers": 16,
+            "outliers": "16;8",
+            "ld15iqr": 0.004087215289473534,
+            "hd15iqr": 0.004352958872914314,
+            "ops": 239.16416375930166,
+            "total": 0.40976038575172424,
+            "iterations": 1
+        },
+        "commit_info": {
+            "id": "76a0e54e408b671ec47e0b91b6e75564df524dac",
+            "time": "2022-09-08T17:25:46+03:00",
+            "author_time": "2022-09-08T17:25:46+03:00",
+            "dirty": true,
+            "project": "heat-bench-stats",
+            "branch": "main"
+        }
+    }
+]
