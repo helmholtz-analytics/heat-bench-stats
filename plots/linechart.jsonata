@@ -13,7 +13,7 @@
         "data": content.stats.mean,
         "backgroundColor": "rgb(0,0,0)",
         "borderColor": "rgb(0,0,0)",
-        "fill": false,
+        "fill": false
       },
       {
         "data": content.stats.(mean - stddev),
@@ -26,7 +26,7 @@
   "options": {
 	"legend": {
 		"display": false
-	}
+	},
     "title": {
       "display": true,
       "text": "KNN Benchmark Execution Time with Stddev"
