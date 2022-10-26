@@ -41,5 +41,91 @@
             "project": "heat-bench-stats",
             "branch": "main"
         }
+    },
+    {
+        "group": null,
+        "name": "test_knn",
+        "fullname": "benchmarks/knn_benchmark/test_knn_benchmark.py::test_knn",
+        "params": null,
+        "param": null,
+        "extra_info": {},
+        "options": {
+            "disable_gc": false,
+            "timer": "perf_counter",
+            "min_rounds": 5,
+            "max_time": 1.0,
+            "min_time": 5e-06,
+            "warmup": false
+        },
+        "stats": {
+            "min": 0.004473581910133362,
+            "max": 0.006787292659282684,
+            "mean": 0.004554369755519124,
+            "stddev": 0.0002250657353159655,
+            "rounds": 104,
+            "median": 0.004525312222540379,
+            "iqr": 3.525335341691971e-05,
+            "q1": 0.004510233178734779,
+            "q3": 0.004545486532151699,
+            "iqr_outliers": 6,
+            "stddev_outliers": 2,
+            "outliers": "2;6",
+            "ld15iqr": 0.004473581910133362,
+            "hd15iqr": 0.00459965318441391,
+            "ops": 219.56934848958397,
+            "total": 0.4736544545739889,
+            "iterations": 1
+        },
+        "commit_info": {
+            "id": "08c6a6d57358678d6fe59e8223a710ea09e69cfc",
+            "time": "2022-10-21T16:47:37+02:00",
+            "author_time": "2022-10-21T16:47:37+02:00",
+            "dirty": false,
+            "project": "heat-bench-stats",
+            "branch": "main"
+        }
+    },
+    {
+        "group": null,
+        "name": "test_knn",
+        "fullname": "benchmarks/knn_benchmark/test_knn_benchmark.py::test_knn",
+        "params": null,
+        "param": null,
+        "extra_info": {},
+        "options": {
+            "disable_gc": false,
+            "timer": "perf_counter",
+            "min_rounds": 5,
+            "max_time": 1.0,
+            "min_time": 5e-06,
+            "warmup": false
+        },
+        "stats": {
+            "min": 0.004483353346586227,
+            "max": 0.006045211106538773,
+            "mean": 0.004551825410537962,
+            "stddev": 0.0001373470999598905,
+            "rounds": 138,
+            "median": 0.004529697820544243,
+            "iqr": 3.9890408515930176e-05,
+            "q1": 0.004515519365668297,
+            "q3": 0.004555409774184227,
+            "iqr_outliers": 10,
+            "stddev_outliers": 4,
+            "outliers": "4;10",
+            "ld15iqr": 0.004483353346586227,
+            "hd15iqr": 0.004616135731339455,
+            "ops": 219.6920817052634,
+            "total": 0.6281519066542387,
+            "iterations": 1
+        },
+        "commit_info": {
+            "id": "08c6a6d57358678d6fe59e8223a710ea09e69cfc",
+            "time": "2022-10-21T16:47:37+02:00",
+            "author_time": "2022-10-21T16:47:37+02:00",
+            "dirty": true,
+            "project": "heat-bench-stats",
+            "branch": "main"
+        }
     }
 ]

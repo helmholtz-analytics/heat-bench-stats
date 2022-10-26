@@ -5,6 +5,7 @@ from pathlib import Path
 def main():
     benchmarkresults = []
     for path in Path('./data').glob('*/*.json'):
+        path = path.relative_to("./data")
         benchmarkresults.append({
             'name':'{}'.format(*path.parts),
             'file':str(path)
