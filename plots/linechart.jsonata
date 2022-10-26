@@ -1,35 +1,35 @@
 {
   "type": "line",
   "data": {
-    "labels": `content`.`heat_commit_id`,
+    "labels": content.heat_commit_id,
     "datasets": [
         {
-        "label": "Max Running Time",
-        "data": `content`.`stats`.max,
-        "backgroundColor": "rgba(239,166,143,0.2)",
-        "borderColor": "rgba(0,0,0,0.6)",
+        "data": content.stats.(mean + stddev),
+        "backgroundColor": "rgba(100,166,143,0.2)",
+        "borderColor": "rgba(0,0,0,0)",
         "fill": 1
       },
       {
-        "label": "Mean Running Time",
-        "data": `content`.`stats`.mean,
+        "data": content.stats.mean,
         "backgroundColor": "rgb(0,0,0)",
         "borderColor": "rgb(0,0,0)",
-        "fill": false
+        "fill": false,
       },
       {
-        "label": "Min Running Time",
-        "data": `content`.`stats`.min,
-        "backgroundColor": "rgba(239,166,143,0.2)",
-        "borderColor": "rgba(0,0,0,0.6)",
+        "data": content.stats.(mean - stddev),
+        "backgroundColor": "rgba(100,166,143,0.2)",
+        "borderColor": "rgba(0,0,0,0.0)",
         "fill": 1
       }
     ]
   },
   "options": {
+	"legend": {
+		"display": false
+	}
     "title": {
       "display": true,
-      "text": "Heat Pytest Benchmark Results"
+      "text": "KNN Benchmark Execution Time with Stddev"
     },
     "tooltips": {
       "mode": "index",
@@ -40,7 +40,7 @@
         {
           "scaleLabel": {
             "display": true,
-            "labelString": "Source Branch"
+            "labelString": "Commit SHA"
           }
         }
       ],
@@ -49,9 +49,6 @@
           "scaleLabel": {
             "display": true,
             "labelString": "Execution Time"
-          },
-          "ticks": {
-            "min": 0
           }
         }
       ]
