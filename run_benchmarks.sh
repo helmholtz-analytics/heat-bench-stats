@@ -3,6 +3,10 @@ readonly WORKDIR=${WORKDIR:-$(pwd)}
 readonly AGGREGATE=${WORKDIR}/aggregate.py
 readonly OUTDIR=${WORKDIR}/data
 
+readonly COMMIT_ID=${CI_COMMIT_SHORT_SHA:-$1}
+echo "Running benchmarks for heat:${COMMIT_ID}"
+
+
 for d in benchmarks/*; do
 	if [[ "$d" != *"_benchmark"* ]]
 	then
@@ -26,7 +30,7 @@ for d in benchmarks/*; do
 
 	# Append results
 	echo "APPENDING $bench_name"
-	python $AGGREGATE tmp.json $bench_out/bench_data.json
+	python $AGGREGATE tmp.json $bench_out/bench_data.json $COMMIT_ID
 	# Clean dir
 
 	echo "CLEANING $bench_name"

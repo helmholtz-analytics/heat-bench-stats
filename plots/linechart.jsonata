@@ -1,7 +1,7 @@
 {
   "type": "line",
   "data": {
-    "labels": `content`.`commit_info`.`branch`,
+    "labels": `content`.`heat_commit_id`,
     "datasets": [
         {
         "label": "Max Running Time",
